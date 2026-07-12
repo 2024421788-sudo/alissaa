@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Colors */
+  --color-primary: #022448;
+  --color-on-primary: #ffffff;
+  --color-secondary: #555f6d;
+  --color-accent: #cea72c;
+  --color-accent-dark: #755b00;
+  --color-surface-bg: #faf9fc;
+  
+  --color-outline-variant: #e1e2ec;
+  --color-surface-container-low: #f4f3f7;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-container: #e8eaf6;
+  --color-on-secondary-container: #1b1c1f;
+  --color-primary-container: #03366d;
+  --color-on-surface-variant: #43474e;
+  --color-primary-fixed-dim: #e3f2fd;
+
+  /* Layout Spacing (Executive Scale) */
+  --spacing-xs: 0.5rem;        /* 8px */
+  --spacing-sm: 1rem;         /* 16px */
+  --spacing-base: 1.5rem;     /* 24px */
+  --spacing-md: 2rem;         /* 32px */
+  --spacing-lg: 3rem;         /* 48px */
+  --spacing-xl: 4rem;         /* 64px */
+  --spacing-margin: 5%;       /* Side Margin */
+  --spacing-gutter: 1.5rem;    /* Grid Gutter */
+  --spacing-max-width: 1200px; /* 12-Column Base Width */
+}
+
+/* Base styles and custom scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface-bg);
+  color: #1a1c1e;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Micro-interaction utility overrides */
+.hover\:scale-101:hover {
+  transform: scale(1.01);
+}
+.hover\:scale-102:hover {
+  transform: scale(1.02);
+}
+.hover\:scale-103:hover {
+  transform: scale(1.03);
+}
+.hover\:scale-104:hover {
+  transform: scale(1.04);
+}
+.backdrop-blur-xs {
+  backdrop-filter: blur(2px);
+}
